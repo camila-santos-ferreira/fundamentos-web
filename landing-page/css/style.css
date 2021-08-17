@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&family=Raleway&display=swap'); /* biblioteca de fontes */
+
+* {
+  margin: 0; /* tamanho da margem */
+  padding: 0; /* distância entre o conteúdo de um elemento e suas bordas */
+}
+
+.bgPrimary {
+  background: #f2d5c4; /* alterando a cor de tudo que está dentro da nav e div*/
+}
+
+.bgSecondary {
+  background: #fef6f0; /* alterando a cor de tudo que está dentro da section */
+}
+
+.bgThyrd {
+  background: #fffbf7; /* alterando a cor de tudo que está dentro da section */
+}
+
+nav {
+  display: flex;
+  align-items: center; /* alinha na vertical */
+  justify-content: space-between; /* alinha na horizontal */
+  height: 100px; /* altura */
+  padding: 0 45px; /* distância entre o conteúdo de um elemento e suas bordas */
+}
+
+nav h3 {
+  font-size: 2rem; /* tamanho da fonte */
+  font-family: "Raleway", sans-serif; /* fonte */
+  text-transform: uppercase; /* letras maiusculas */
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif; /* fonte */
+  font-size: 4rem; /* tamanho da fonte */
+  text-align: center; /* alinhar no centro */
+}
+
+.imgFundo {
+  background-image: url("../img/background-image.jpg"); /* .. serve para sair da pasta css*/
+  background-size: contain; /* contain : contida no espaço disponível para ela (pixels) */
+  background-repeat: no-repeat; /* serve para não repetir a imagem */
+  background-position: center; /* alinahr no centtro */
+  height: 650px; /* altura */
+}
+
+.details {
+  display: flex;
+  flex-direction: column; /* alterar para colunas */
+  align-items: flex-start; /* alinha na horizontal e no começo */
+  justify-content: space-around; /* separar espaço por igual entre os componentes */
+  height: 400px; /* altura do espaço */
+  width: 25%; /* largura em % de acordo com a tela */
+  padding-left: 100px; /* espaço para dentro do conteúdo */
+  font-family: 'Poppins', sans-serif;
+}
+
+.details input {
+    width: 80%;
+    height: 40px;
+    padding: 0 16px;
+    font-family: 'Poppins', sans-serif;
+    border: none; /* sem borda */
+}
+
+.details input:focus { /* tirar borda preta quando entra no foco */
+    outline: none;
+}
+
+.details button {
+    width: 60%;
+    height: 40px;
+    background: #463232;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.empresas {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    padding-top: 15px;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px 0;
+}
+
+.produtos {
+    display: flex;
+    justify-content: space-evenly;
+    height: 650px;
+}
+
+.produtoUnico {
+    font-family: 'Poppins', sans-serif;
+    width: 40%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#comprar {
+    width: 30%;
+    height: 50px;
+    background: #463232;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+#detalhes {
+    width: 40%;
+    height: 50px;
+    background: #FFF;
+    font-family: 'Poppins', sans-serif;
+    color: #463232;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border: 1px solid #463232;
+    outline: none;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif; /* fonte */
+    font-size: 3rem; /* tamanho da fonte */
+    text-align: center; /* alinhar no centro */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
