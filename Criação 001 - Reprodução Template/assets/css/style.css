@@ -1,0 +1,449 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,500;1,600&family=Raleway&display=swap");
+
+* {
+  margin: 0; /* margem */
+  padding: 0; /* preenchimento */
+  color: #463232; /* cor */
+}
+
+a {
+  text-decoration: none; /* decoração de texto */
+  color: #463232; /* cor */
+}
+
+a:hover {
+  font-weight: bold; /* intensidade da fonte */
+}
+
+.fa {
+  color: #463232; /* cor */
+}
+
+.menu {
+  display: flex; /* mostrar */
+  justify-content: space-between; /* justificar(alinhar) o conteúdo */
+  width: 35%; /* largura */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+}
+.main {
+  background: #f2d5c4; /* fundo */
+}
+
+.bgPrimary {
+  background: #f2d5c4; /* fundo */
+}
+
+.bgSecondary {
+  background: #f6e5db; /* fundo */
+}
+
+.brThyrd {
+  background: #fffbf7; /* fundo */
+}
+
+nav {
+  display: flex; /* mostrar */
+  align-items: center; /* alinhar itens */
+  /* alinha na vertical; */
+  justify-content: space-between; /* justificar(alinhar) o conteúdo */
+  /* alinha na horizontal; */
+  height: 60px; /* altura */
+  padding: 0 45px; /* preenchimento */
+}
+
+nav h3 {
+  font-size: 2rem; /* tamanho da fonte */
+  font-family: "Raleway", sans-serif; /* família de fontes */
+  text-transform: uppercase; /* transformação de texto */
+}
+
+#myBtn {
+  cursor: pointer; /* cursor */
+}
+
+.modal {
+  display: none; /* mostrar */
+  position: fixed; /* posição */
+  z-index: 1; /* índice z */
+  left: 0;
+  top: 0; /* topo */
+  width: 100%; /* largura */
+  height: 100%; /* altura */
+  overflow: auto; /* transbordar */
+  background-color: rgb(0, 0, 0); /* cor de fundo */
+  background-color: rgba(0, 0, 0, 0.5); /* cor de fundo */
+}
+
+.modal-content {
+  background-color: #f2d5c4; /* cor de fundo */
+  margin: 10rem auto; /* margem */
+  padding: 20px; /* preenchimento */
+  border: 1px solid #463232; /* borda */
+  width: 35%; /* largura */
+  border-radius: 5px; /* raio de fronteira */
+}
+.modal-content h3 {
+  font-size: 2rem; /* tamanho da fonte */
+  font-family: "Raleway", sans-serif; /* família de fontes */
+  text-transform: uppercase; /* transformação de texto */
+  text-align: center; /* alinhamento de texto */
+  margin: 15px; /* margem */
+}
+
+.input-modal {
+  display: block; /* mostrar */
+  width: 60%; /* largura */
+  margin: 0 auto; /* margem */
+  align-items: center; /* alinhar itens */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  text-align: center; /* alinhamento de texto */
+}
+.input-modal button {
+  width: 60%; /* largura */
+  height: 60px; /* altura */
+  background: #463232; /* fundo */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  color: #fff; /* cor */
+  font-size: 1.3rem; /* tamanho da fonte */
+  border: none; /* borda */
+  outline: none; /* contorno */
+  margin-top: 20px; /* margem superior */
+  cursor: pointer; /* cursor */
+}
+.input-modal input {
+  width: 80%; /* largura */
+  margin-top: 20px; /* margem superior */
+  height: 1.9rem; /* altura */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  border: none; /* borda */
+  padding: 5px 20px; /* preenchimento */
+}
+
+.input-modal input:focus {
+  outline: none; /* contorno */
+}
+.close {
+  color: #463232; /* cor */
+  float: right; /* flutuador */
+  font-size: 28px; /* tamanho da fonte */
+  font-weight: bold; /* espessura da fonte */
+}
+
+.close:hover,
+.close:focus {
+  color: black; /* cor */
+  text-decoration: none; /* decoração de texto */
+  cursor: pointer; /* cursor */
+}
+
+h1 {
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  font-size: 4.5rem; /* tamanho da fonte */
+  text-align: center; /* alinhamento de texto */
+  color: #463232; /* cor */
+  font-weight: 700; /* espessura da fonte */
+  letter-spacing: -4px; /* espaçamento entre letras */
+}
+
+.imgFundo {
+  background-image: url("../img/background-image.jpg"); /* imagem de fundo */
+  background-size: 1366px 768px; /* tamanho do fundo */
+  background-repeat: no-repeat; /* fundo de repetição */
+  background-position: bottom; /* posição de fundo */
+  padding-bottom: 50px; /* preenchimento do botão */
+}
+
+.detalhes {
+  display: flex; /* mostrar */
+  flex-direction: column; /* direção flexível */
+  align-items: flex-start; /* alinhar itens */
+  justify-content: space-around; /* justificar(alinhar) o conteúdo */
+  height: 450px; /* altura */
+  margin-top: 40px; /* margem superior */
+  width: 25%; /* largura */
+  padding-left: 100px; /* preenchimento esquerdo */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+}
+
+.detalhes input {
+  width: 80%; /* largura */
+  height: 40px; /* altura */
+  padding: 0 16px; /* preenchimento */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  border: none; /* borda */
+}
+
+.detalhes input:focus {
+  outline: none; /* contorno */
+}
+
+.detalhes button {
+  width: 60%; /* largura */
+  height: 60px; /* altura */
+  background: #463232; /* fundo */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  color: #fff; /* cor */
+  font-size: 1.3rem; /* tamanho da fonte */
+  border: none; /* borda */
+  outline: none; /* contorno */
+}
+
+.empresas {
+  text-align: center; /* alinhamento de texto */
+  font-size: 1.5rem; /* tamanho da fonte */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  text-transform: uppercase; /* transformação de texto */
+  padding-top: 15px; /* preenchimento superior */
+  letter-spacing: 4px; /* espaçamento entre letras */
+  font-weight: 500; /* espessura da fonte */
+}
+
+.logos {
+  display: flex; /* mostrar */
+  justify-content: space-evenly; /* justificar(alinhar) o conteúdo */
+  padding: 25px 0 50px; /* preenchimento */
+}
+
+.produtos {
+  display: flex; /* mostrar */
+  justify-content: space-evenly; /* justificar(alinhar) o conteúdo */
+  height: 100%; /* altura */
+  margin-top: 40px; /* margem superior */
+}
+
+.produtoUnico {
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  width: 35%; /* largura */
+  display: flex; /* mostrar */
+  flex-direction: column; /* direção flexível */
+  justify-content: space-evenly; /* justificar(alinhar) o conteúdo */
+}
+
+.produtoUnico h2 {
+  font-size: 4rem; /* tamanho da fonte */
+  font-weight: 500; /* espessura da fonte */
+  margin-top: 50px; /* margem superior */
+}
+
+.produtoUnico p {
+  margin-bottom: 25px; /* margem do botão */
+}
+
+#comprar {
+  width: 40%; /* largura */
+  height: 50px; /* altura */
+  background: #463232; /* fundo */
+  margin-bottom: 25px; /* margem do botão */
+  color: #fff; /* cor */
+  font-size: 1.3rem; /* tamanho da fonte */
+  border: none; /* borda */
+  outline: none; /* contorno */
+}
+
+#detalhes {
+  width: 30%; /* largura */
+  height: 50px; /* altura */
+  background: #fff; /* fundo */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  color: #463232; /* cor */
+  font-size: 1.3rem; /* tamanho da fonte */
+  border: 1px solid #463232; /* borda */
+  outline: none; /* contorno */
+}
+
+.prodBaixo {
+  text-align: center; /* alinhamento de texto */
+  margin-top: 25px; /* margem superior */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+}
+
+.prodBaixo h2 {
+  font-size: 5rem; /* tamanho da fonte */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  font-weight: 300; /* espessura da fonte */
+}
+
+h3 {
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  font-weight: 500; /* espessura da fonte */
+  font-size: 3rem; /* tamanho da fonte */
+}
+
+.buttons {
+  display: flex; /* mostrar */
+  height: 40px; /* altura */
+}
+
+.comprar,
+.detalhesBtn {
+  margin-right: 20px; /* margem direita */
+}
+
+.comprar {
+  width: 40%; /* largura */
+  height: 50px; /* altura */
+  background: #463232; /* fundo */
+  margin-bottom: 25px; /* margem do botão */
+  color: #fff; /* cor */
+  font-size: 1.3rem; /* tamanho da fonte */
+  border: none; /* borda */
+  outline: none; /* contorno */
+}
+
+.detalhesBtn {
+  width: 50%; /* largura */
+  height: 50px; /* altura */
+  background: #fff; /* fundo */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  color: #463232; /* cor */
+  font-size: 1rem; /* tamanho da fonte */
+  border: 1px solid #463232; /* borda */
+  outline: none; /* contorno */
+}
+
+.account h3 {
+  font-size: 3rem; /* tamanho da fonte */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+  font-weight: 700; /* espessura da fonte */
+  margin-bottom: 15px; /* margem do botão */
+  text-align: center; /* alinhamento de texto */
+}
+
+.numbers {
+  display: flex; /* mostrar */
+  justify-content: space-evenly; /* justificar(alinhar) o conteúdo */
+  margin-top: 50px; /* margem superior */
+  padding: 35px 0; /* preenchimento */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+}
+
+.account:first-child {
+  border-right: 2px solid; /* borda direita */
+  padding-right: 150px; /* preenchimento direito */
+}
+.account:last-child {
+  border-left: 2px solid; /* borda esquerda */
+  padding-left: 150px; /* preenchimento esquerdo */
+}
+
+footer {
+  margin: 30px 0; /* margem */
+  padding-top: 20px; /* preenchimento superior */
+  text-align: center; /* alinhamento de texto */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+}
+
+.footer {
+  display: flex; /* mostrar */
+  justify-content: space-evenly; /* justificar(alinhar) o conteúdo */
+  width: 70%; /* largura */
+  margin: 25px auto; /* margem */
+}
+
+.footerItens {
+  display: flex; /* mostrar */
+  justify-content: space-evenly; /* justificar(alinhar) o conteúdo */
+  width: 80%; /* largura */
+  color: #b8b8b8; /* cor */
+}
+
+.footerMenu h3 {
+  font-size: 2rem; /* tamanho da fonte */
+  margin-bottom: 10px; /* margem do botão */
+}
+
+.footerMenu p {
+  font-size: 1.2rem; /* tamanho da fonte */
+  line-height: 2rem; /* altura da linha */
+  color: #848484; /* cor */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+}
+
+.footerMenu p:hover {
+  color: #463232; /* cor */
+}
+
+.social h3 {
+  color: #463232; /* cor */
+  font-size: 2rem; /* tamanho da fonte */
+  font-family: "Raleway", sans-serif; /* família de fontes */
+  text-transform: uppercase; /* transformação de texto */
+  font-weight: 700; /* espessura da fonte */
+  margin-bottom: 35px; /* margem do botão */
+}
+
+.social p {
+  font-size: 1.2rem; /* tamanho da fonte */
+  line-height: 2rem; /* altura da linha */
+  color: #848484; /* cor */
+  width: 75%; /* largura */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+}
+
+.social i {
+  font-size: 2rem; /* tamanho da fonte */
+  margin-right: 25px; /* margem direita */
+  margin-top: 25px; /* margem superior */
+}
+
+.social {
+  width: 35%; /* largura */
+  margin-right: 80px; /* margem direita */
+}
+
+hr {
+  border: 0; /* borda */
+  height: 1px; /* altura */
+  background-image: linear-gradient(
+    /* imagem de fundo */ to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.modal {
+  display: none; /* mostrar */
+  position: fixed; /* posição */
+  z-index: 1; /* índice z */
+  left: 0; /* esquerda */
+  top: 0; /* topo */
+  width: 100%; /* largura */
+  height: 100%; /* altura */
+  overflow: auto; /* transbordar */
+  background-color: rgb(0, 0, 0); /* cor de fundo */
+  background-color: rgba(0, 0, 0, 0.5); /* cor de fundo */
+}
+
+.modal-content {
+  background-color: #f2d5c4; /* cor de fundo */
+  margin: 10rem auto; /* margem */
+  padding: 20px; /* preenchimento */
+  border: 1px solid #463232; /* borda */
+  border-radius: 5px; /* raio de fronteira */
+  width: 35%; /* largura */
+}
+
+.modal-content h3 {
+  font-size: 2rem; /* tamanho da fonte */
+  font-family: "Raleway", sans-serif; /* família de fontes */
+  text-transform: uppercase; /* transformação de texto */
+  text-align: center; /* alinhamento de texto */
+  margin: 15px; /* margem */
+}
+
+.input-modal {
+  display: block; /* mostrar */
+  width: 60%; /* largura */
+  margin: 0 auto; /* margem */
+  align-items: center; /* alinhar itens */
+  text-align: center; /* alinhamento de texto */
+  font-family: "Poppins", sans-serif; /* família de fontes */
+}
+
+.close {
+  color: #463232; /* cor */
+  font-size: 28px; /* tamanho da fonte */
+  font-weight: bold; /* espessura da fonte */
+  float: right; /* flutuador */
+}
