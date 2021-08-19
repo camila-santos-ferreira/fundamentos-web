@@ -1,2 +1,1 @@
-https://dribbble.com/shots/16208819-landing-page-design/attachments/8069549?mode=media
-Link do layout
+![img](https://github.com/camila-santos-ferreira/fundamentos-web/blob/main/Cria%C3%A7%C3%A3o%20001%20-%20Reprodu%C3%A7%C3%A3o%20Template/img.jpg)
